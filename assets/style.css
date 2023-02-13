@@ -1,0 +1,61 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(103,0,0,1) 99%);
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#container {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+#textInput {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+#textOutput {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	color: white;
+}
+#textInput h1 {
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	color: white;
+	text-align: center;
+}
+#textInput textarea {
+	padding: 0.3em;
+	background-color: #cccccc;
+	resize: vertical;
+	border-radius: 5px;
+	outline: none;
+}
+#textInput button {
+	padding: 10px 20px;
+	border-radius: 5px;
+	width: 50%;
+	border: none;
+	color: white;
+	font-weight: bold;
+	background: green;
+	transition: 0.4s all ease;
+	cursor: pointer;
+}
+#textInput button:hover {
+	transform: scale(1.2);
+	background: rgb(0, 166, 0);
+}
